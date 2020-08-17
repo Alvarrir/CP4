@@ -1,0 +1,23 @@
+# group student's in such a way that the distance between their houses are minimal
+# output the average distance between students in a group
+# if we let N = 10, 5 groups, distance can be found through math ((X-x)^2+(Y-y)^2)^(1/2) where (X,Y) is 1st student, (x,y) is 2nd student
+# am a total noob so ill just do the math first LOL
+# Storing the coordinates in a set
+Student1 = [1,1]
+Student2 = [1,3]
+def cost(v1, v2):
+  X = float(v1[0])
+  Y = float(v1[1])
+  x = float(v2[0])
+  y = float(v2[1])
+  squarex = float((X-x)*2)
+  squarey = float((Y-y)*2)
+  n = abs(float((squarex+squarey)*(1/2)))
+  return n
+cost(Student1, Student2)
+# okay it works but that was an ordeal OOPS maybe i should go revise my python again...
+# will just read the github now since theres not much time left in CP period
+# okay looks like i am a very uncompetitive programming guess ill die :D
+# Exercise 1.1.1: Don't really understand why it won't work but guess ill know when i reach chapter 3.4...
+# Exercise 1.1.2: Same as 1.1.1, but probably because working with large number of groups is just impossible to solve fast?
+# Exercise 1.1.3: Same as 1.1.1, DP can eat?
