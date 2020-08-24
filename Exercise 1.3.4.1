@@ -1,2 +1,26 @@
 # Question 2
-# For some reason Google Collab is giving me wierd errors so I will stop here f
+# import
+from math import pi
+
+# function
+def pi_dec(n):
+  if 0 < n <= 15:
+    print("{:.{}f}".format(pi, n))
+
+# main/test case
+pi_dec(2)
+pi_dec(4)
+pi_dec(5)
+
+# Question 3
+# import
+import datetime 
+import calendar 
+
+# function
+def find_day(input_date): 
+    day = datetime.datetime.strptime(date, '%d %m %Y').weekday() 
+    return (calendar.day_name[day]) 
+
+# main
+print(find_day("09 08 2010")) 
